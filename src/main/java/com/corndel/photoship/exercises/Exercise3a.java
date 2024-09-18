@@ -13,7 +13,7 @@ public class Exercise3a {
    * @returns {String} The greeting string with uppercase name interpolated
    */
   public static String nameTag(String name) {
-    // TODO
-    return null;
+    String response = "Hello, my name is " + name.toUpperCase() + "!";
+    return response;
   }
 }
