@@ -1,5 +1,5 @@
 package com.corndel.photoship.exercises;
-
+import java.util.ArrayList;
 import java.util.List;
 
 public class Exercise2a {
@@ -17,6 +17,12 @@ public class Exercise2a {
    */
   public static <T> List<T> getMiddle(List<T> list) {
     // TODO
-    return null;
+
+    if (list.size()<= 2) {
+      return new ArrayList<>();
+    }
+    list.remove(0);
+    list.remove(list.size()-1);
+    return list;
   }
 }
